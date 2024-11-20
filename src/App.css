@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border-box => width 和 height 包含內容區域、內邊距和邊框 */
+    box-sizing: border-box;
+}
+body{
+    background-color: #3f89dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.wrapper{
+    background-color: #333;
+    color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+.create-form{
+    border:  1px solid #ccc; /* 表單邊框 */
+    height: 40px; /* 表單寬度 */
+    width: 100%; /* 寬度100% */
+    margin: 25px 0;
+    display: flex; /* 把內容填滿 */
+}
+.create-form>input{
+    outline: none; /* 框限取消 */
+    border: none; /* 框限取消 */
+    /* padding: 5px; */
+    background: none; /* 背景取消 */
+    color: white; 
+    width: 100%; /* 填滿寬度 */
+    height: 100%; /* 填滿高度 */
+    padding-left: 10px;
+}
+.create-form>button{
+    border: none;
+    background-color: #ccc; /* 背景顏色 */
+    color: #333; /* 文字顏色 */
+    width: 50px; /* 寬度50px */
+    height: 100%;
+    /* 改變滑鼠形狀 , 移致區塊改變滑鼠樣式 */
+    cursor: pointer;
+}
+
+/* todo列表 */
+.todo{
+    background-color: #ccc;
+    color: rgb(2, 22, 110);
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 點擊todo內容的變化 :完成的樣子 */
+.completed{
+    opacity: .6;
+    text-decoration: line-through 3px red;
+}
